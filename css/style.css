@@ -1,7 +1,18 @@
 /*********************************************General***********************************************/
+main {
+  overflow: hidden;
+}
+
+body {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 300px;
+}
+
+
 #wrapper {
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 header {
@@ -238,7 +249,7 @@ line-height: 100%;
   width: 63px;
   height: 63px;
   background-color: #612999;
-  border-radius: 50%; /* עיגול */
+  border-radius: 50%; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,6 +258,79 @@ line-height: 100%;
 .cart-icon img.cart {
   width: 31px;
   height: 31px;
+}
+/********************************************************************************************/
+
+
+/***********************************footer****************************************************/
+footer {
+  background-color: #EFECFF;
+  position: fixed;
+  bottom: 0;
+  width: 1400px;
+  height: 287px;
+  display: flex;
+  z-index: 10;
+}
+
+.container-row {
+  display: flex;
+  align-items: baseline;
+  margin-top: 32px;
+}
+
+.footer-col {
+  display: block;
+}
+
+.footer-col h3 {
+  color: #333;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  display: flex;
+  white-space: nowrap;
+  margin-left: 32px;
+  margin-top: 32px;
+}
+
+.footer-col ul {
+  color: #333;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 32px;
+  margin-top: 16px;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.images-container {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: baseline;
+  margin-left: 32px;
+  margin-top: 24px;
+  gap : 16px;
+}
+
+.footer-col p {
+  width: 198px;
+  height: 18px;
+  flex-shrink: 0;
+  color: #333;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  margin-left: 32px;
+  margin-top: 16px;
 }
 
 
