@@ -332,5 +332,75 @@ footer {
   margin-left: 32px;
   margin-top: 16px;
 }
+/********************************************************************************************/
 
+
+/**********************************************PAGE2******************************************/
+
+
+/****************************************plants-images-section**************************************/
+.plants-image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 32px;
+  flex-wrap: wrap; 
+}
+
+.image-wrapper-left {
+  margin-left: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border: 4px solid #E6DBFE;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.image-wrapper-right {
+  margin-left: 31.71px;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border: 4px solid #E6DBFE;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.image-wrapper-middle {
+  margin-left: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 388.286px;
+  height: 300px;
+  flex-shrink: 0;
+  border: 4px solid #E6DBFE;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.image-wrapper-left img {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.image-wrapper-right img {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.image-wrapper-middle img {
+  width: 388.286px;
+  height: 300px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+/*****************************************************************************************/
 
