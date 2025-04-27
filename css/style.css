@@ -119,14 +119,28 @@ line-height: 100%;
 /********************************************************************************************/
 
 /*********************************************plants-grid***********************************************/
-h3 {
+.plant-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.line {
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+
+.popular-title {
   color: #612999;
   font-family: 'Rubik', sans-serif;
   font-size: 40px;
-  font-style: normal;
-  line-height: 40px;
-  margin-top: 39px;
-  margin-left: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .plants-grid {
@@ -138,60 +152,101 @@ h3 {
 }
 
 .plant-card {
-  background: #fff;
+  background: #EFECFF;
   border: 1px solid #ddd;
   border-radius: 16px;
-  width: 280px;
-  padding: 20px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  width: 260px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.heart-icon-container {
-  margin-bottom: 10px; 
-}
-
-.heart {
-  width: 32px;
-  height: 32px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
 
 .image-container {
   width: 100%;
-  height: 200px;
   overflow: hidden;
-  margin-bottom: 16px;
 }
 
-.image {
+.image-wrapper {
+  display: grid;
+  place-items: start end;
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.plant-image {
+  grid-area: 1 / 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
 }
 
-h2 {
-  font-size: 22px;
-  margin: 10px 0;
+.heart-background {
+  grid-area: 1 / 1;
+  background-color: #EFECFF;
+  width: 47px;
+  height: 47px;
+  margin: 10px 10px 0 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
 }
 
-p {
-  font-size: 16px;
+.heart-icon {
+  width: 23px;
+  height: 20px;
+}
+
+.plant-info {
+  padding: 16px;
+  text-align: center;
+}
+
+.plant-info h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.plant-info p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
   color: #555;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
+
+.price-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-top: 12px;
+}
+
 
 .price {
-  font-size: 18px;
-  font-weight: bold;
+  font-family: 'Abel', sans-serif;
+  font-size: 35px;
   color: #612999;
-  margin-bottom: 10px;
+  white-space: nowrap;
+}
+.cart-icon {
+  width: 63px;
+  height: 63px;
+  background-color: #612999;
+  border-radius: 50%; /* עיגול */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.icon-photo img {
-  width: 24px;
-  height: 24px;
+.cart-icon img.cart {
+  width: 31px;
+  height: 31px;
 }
+
+
