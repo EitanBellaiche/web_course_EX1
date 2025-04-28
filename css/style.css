@@ -12,7 +12,7 @@ body {
 
 
 #wrapper {
-  max-width: 1200px;
+  max-width: 100%;
 }
 
 header {
@@ -55,16 +55,15 @@ header {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 48px;
-  margin-right: 60px;
+  gap: 64px;
+  margin-right: 120px;
 }
 
 .nav-links a {
   text-decoration: none;
   font-family: 'Nunito', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   color: #612999;
-
 }
 
 .nav-links a.home-link {
@@ -76,8 +75,9 @@ header {
 
 /*********************************************Main-Section***********************************************/
 #main-section {
+  width: 100%;
   height: 797px;
-  width: 1400px;
+  flex-shrink: 0;
   background: url("../images/cover-photo.jpg") lightgray 50% / 1200px 797px no-repeat;
   background-size: cover;
 }
@@ -87,11 +87,10 @@ header {
   color: #612999;
   font-family: 'Nunito', sans-serif;
   width: 448px;
-  height: 131px;
   font-size: 96px;
   font-style: normal;
   line-height: 100%;
-  margin-top: 60px;
+  margin-top: 32px;
   margin-left: 32px;
 }
 
@@ -100,7 +99,6 @@ header {
   font-family: 'Nunito', sans-serif;
   font-size: 24px;
   font-style: normal;
-  line-height: 100%;
   margin-left: 32px;
   width: 448px;
   height: 99px;
@@ -118,7 +116,7 @@ header {
   font-style: normal;
   line-height: 40px;
   margin-left: 32px;
-  margin-top: 32px;
+
 }
 
 #about-section p {
@@ -128,7 +126,6 @@ header {
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
   margin-left: 32px;
-  margin-top: 32px;
 }
 
 /********************************************************************************************/
@@ -274,10 +271,9 @@ footer {
   background-color: #EFECFF;
   position: fixed;
   bottom: 0;
-  width: 1400px;
+  width: 100%;
   height: 287px;
   display: flex;
-  z-index: 10;
 }
 
 .container-row {
