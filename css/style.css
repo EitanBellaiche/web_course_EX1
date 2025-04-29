@@ -147,8 +147,9 @@ header {
 .line {
   display: flex;
   justify-content: left;
-  gap: 40px;
   margin-bottom: 40px;
+  margin-left: 29px;
+
 }
 
 
@@ -165,29 +166,34 @@ header {
 
 
 .plant-card {
+  width: 376px;
+  height: 496px;
+  flex-shrink: 0;
+  border-radius: 38px;
   background: #EFECFF;
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  width: 260px;
+  box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  margin-left: 29px;
-
+  justify-content: space-between;
+  margin-right: 19px;
 }
+
 
 .image-container {
-  width: 100%;
+  height: 60%;
   overflow: hidden;
 }
+
 
 .image-wrapper {
   display: grid;
   place-items: start end;
   width: 100%;
-  height: 200px;
+  height: 100%;
   position: relative;
+  overflow: hidden;
+  border-radius: 38px;
 }
 
 .plant-image {
@@ -206,7 +212,7 @@ header {
   background-color: #EFECFF;
   width: 47px;
   height: 47px;
-  margin: 10px 10px 0 0;
+  margin: 40px 50px 0 0;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -220,30 +226,34 @@ header {
 }
 
 .plant-info {
-  padding: 16px;
-  text-align: center;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 32px;
+  text-align: left;
 }
 
+
 .plant-info h2 {
-  font-family: 'Rubik', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: #333;
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 7px;
+  margin-top: 15px;
+  color: #000;
 }
 
 .plant-info p {
-  font-family: 'Rubik', sans-serif;
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 12px;
+  font-family: 'Abel', sans-serif;
+  font-size: 18px;
+  color: #333;
 }
 
 .price-cart {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 12px;
 }
 
 
@@ -262,6 +272,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 27px;
+  margin-right: 51px;
+
 }
 
 .cart-icon img.cart {
@@ -314,11 +327,25 @@ footer {
   font-weight: 400;
   margin-left: 32px;
   margin-top: 16px;
+  list-style: none;
 }
+
 
 .footer-col ul li {
   margin-bottom: 8px;
 }
+
+.footer-col ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.footer-col ul li a:hover {
+  color: #612999;
+}
+
 
 .images-container {
   width: 20px;
@@ -329,6 +356,7 @@ footer {
   margin-left: 32px;
   margin-top: 24px;
   gap: 16px;
+  color: #272D4E;
 }
 
 .footer-col p {
